@@ -14,40 +14,45 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
     <!-- Шапка сайта -->
     <header class="header">
-      <div class="container main-container">
-        <nav class="main-nav">
-          <a class="logo" href="./index.html"><span>Web</span>Studio</a>
+      <div class="container header__container">
+        <nav class="nav">
+          <a class="logo header__logo" href="./index.html"
+            ><span class="header__logo--color">Web</span>Studio</a
+          >
 
-          <ul class="site-nav list">
-            <li class="item"><a class="link pointer" href="./index.html">Студия</a></li>
-            <li class="item">
-              <a class="link pointer portfolio" href="./portfolio.html">Портфолио</a>
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a class="nav__link link" href="./index.html">Студия</a>
             </li>
-            <li class="item"><a class="link pointer" href="">Контакты</a></li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--portfolio link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav__item"><a class="nav__link link" href="">Контакты</a></li>
           </ul>
         </nav>
 
-        <ul class="auth-nav list">
-          <li class="item">
-            <div class="header-icon">
-              <a class="link pointer" href="mailto:info@devstudio.com">
-                <svg class="icon-header" width="16" height="12">
+        <ul class="nav__list nav__list--right list">
+          <li class="nav__item">
+            <div class="nav__box">
+              <a class="nav__link nav__link--color link" href="mailto:info@devstudio.com">
+                <svg class="nav__icon" width="16" height="12">
                   <use href="./images/sprite.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com
               </a>
             </div>
           </li>
-          <li class="item">
-            <div class="header-icon">
-              <a class="link pointer" href="tel:+380961111111">
-                <svg class="icon-header phone" width="10" height="16">
+          <li class="nav__item">
+            <div class="nav__box">
+              <a class="nav__link nav__link--color link" href="tel:+380961111111">
+                <svg class="nav__icon phone" width="10" height="16">
                   <use href="./images/sprite.svg#icon-phone"></use>
                 </svg>
                 +38 096 111 11 11
@@ -60,223 +65,225 @@
 
     <main>
       <!-- Секция примеры работ -->
-      <section class="section-works section">
+      <section class="portfolio">
         <div class="container">
-          <h1 class="works visually-hidden">Примеры работ</h1>
-          <ul class="portfolio list portfolio-nav">
-            <li class="btn-container">
-              <button class="button pointer all" type="button">Все</button>
+          <h1 class="title visually-hidden">Примеры работ</h1>
+          <ul class="list portfolio__list">
+            <li class="portfolio__item">
+              <button class="button button__portfolio button__portfolio--active" type="button">
+                Все
+              </button>
             </li>
-            <li class="btn-container">
-              <button class="button pointer" type="button">Веб-сайты</button>
+            <li class="portfolio__item">
+              <button class="button button__portfolio" type="button">Веб-сайты</button>
             </li>
-            <li class="btn-container">
-              <button class="button pointer" type="button">Приложения</button>
+            <li class="portfolio__item">
+              <button class="button button__portfolio" type="button">Приложения</button>
             </li>
-            <li class="btn-container">
-              <button class="button pointer" type="button">Дизайн</button>
+            <li class="portfolio__item">
+              <button class="button button__portfolio" type="button">Дизайн</button>
             </li>
-            <li class="btn-container">
-              <button class="button pointer" type="button">Маркетинг</button>
+            <li class="portfolio__item">
+              <button class="button button__portfolio" type="button">Маркетинг</button>
             </li>
           </ul>
 
           <ul class="list works-list">
             <!-- Пример №1 -->
-            <li class="flex-element">
-              <a class="works-link" href="">
-                <div class="works-thumb">
+            <li class="works__element">
+              <a class="works__link" href="">
+                <div class="works__thumb">
                   <img
-                    class="works-img"
+                    class="works__img"
                     src="./images/portfolio/work-1.jpg"
                     alt="Пример работы №1"
                     width="370"
                     height="294"
                   />
-                  <p class="works-descr">
+                  <p class="works__descr">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
                     о компании или частном лице.
                   </p>
                 </div>
-                <h2 class="works-title">Технокряк</h2>
-                <p class="works-text">Веб-сайт</p>
+                <h2 class="works__title">Технокряк</h2>
+                <p class="works__text">Веб-сайт</p>
               </a>
             </li>
             <!-- Пример №2 -->
-            <li class="flex-element">
-              <a class="works-link" href="">
-                <div class="works-thumb">
+            <li class="works__element">
+              <a class="works__link" href="">
+                <div class="works__thumb">
                   <img
-                    class="works-img"
+                    class="works__img"
                     src="./images/portfolio/work-2.jpg"
                     alt="Пример работы №2"
                     width="370"
                     height="294"
                   />
-                  <p class="works-descr">
+                  <p class="works__descr">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
                     о компании или частном лице.
                   </p>
                 </div>
 
-                <h2 class="works-title">Постер New Orlean vs Golden Star</h2>
-                <p class="works-text">Дизайн</p>
+                <h2 class="works__title">Постер New Orlean vs Golden Star</h2>
+                <p class="works__text">Дизайн</p>
               </a>
             </li>
             <!-- Пример №3 -->
-            <li class="flex-element">
-              <a class="works-link" href="">
-                <div class="works-thumb">
+            <li class="works__element">
+              <a class="works__link" href="">
+                <div class="works__thumb">
                   <img
-                    class="works-img"
+                    class="works__img"
                     src="./images/portfolio/work-3.jpg"
                     alt="Пример работы №3"
                     width="370"
                     height="294"
                   />
-                  <p class="works-descr">
+                  <p class="works__descr">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
                     о компании или частном лице.
                   </p>
                 </div>
 
-                <h2 class="works-title">Ресторан Seafood</h2>
-                <p class="works-text">Приложение</p>
+                <h2 class="works__title">Ресторан Seafood</h2>
+                <p class="works__text">Приложение</p>
               </a>
             </li>
             <!-- Пример №4 -->
-            <li class="flex-element">
-              <a class="works-link" href="">
-                <div class="works-thumb">
+            <li class="works__element">
+              <a class="works__link" href="">
+                <div class="works__thumb">
                   <img
-                    class="works-img"
+                    class="works__img"
                     src="./images/portfolio/work-4.jpg"
                     alt="Пример работы №4"
                     width="370"
                     height="294"
                   />
-                  <p class="works-descr">
+                  <p class="works__descr">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
                     о компании или частном лице.
                   </p>
                 </div>
 
-                <h2 class="works-title">Проект Prime</h2>
-                <p class="works-text">Маркетинг</p>
+                <h2 class="works__title">Проект Prime</h2>
+                <p class="works__text">Маркетинг</p>
               </a>
             </li>
             <!-- Пример №5 -->
-            <li class="flex-element">
-              <a class="works-link" href="">
-                <div class="works-thumb">
+            <li class="works__element">
+              <a class="works__link" href="">
+                <div class="works__thumb">
                   <img
-                    class="works-img"
+                    class="works__img"
                     src="./images/portfolio/work-5.jpg"
                     alt="Пример работы №5"
                     width="370"
                     height="294"
                   />
-                  <p class="works-descr">
+                  <p class="works__descr">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
                     о компании или частном лице.
                   </p>
                 </div>
 
-                <h2 class="works-title">Проект Boxes</h2>
-                <p class="works-text">Приложение</p>
+                <h2 class="works__title">Проект Boxes</h2>
+                <p class="works__text">Приложение</p>
               </a>
             </li>
             <!-- Пример №6-->
-            <li class="flex-element">
-              <a class="works-link" href="">
-                <div class="works-thumb">
+            <li class="works__element">
+              <a class="works__link" href="">
+                <div class="works__thumb">
                   <img
-                    class="works-img"
+                    class="works__img"
                     src="./images/portfolio/work-6.jpg"
                     alt="Пример работы №6"
                     width="370"
                     height="294"
                   />
-                  <p class="works-descr">
+                  <p class="works__descr">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
                     о компании или частном лице.
                   </p>
                 </div>
 
-                <h2 class="works-title">Inspiration has no Borders</h2>
-                <p class="works-text">Веб-сайт</p>
+                <h2 class="works__title">Inspiration has no Borders</h2>
+                <p class="works__text">Веб-сайт</p>
               </a>
             </li>
             <!-- Пример №7 -->
-            <li class="flex-element">
-              <a class="works-link" href="">
-                <div class="works-thumb">
+            <li class="works__element">
+              <a class="works__link" href="">
+                <div class="works__thumb">
                   <img
-                    class="works-img"
+                    class="works__img"
                     src="./images/portfolio/work-7.jpg"
                     alt="Пример работы №7"
                     width="370"
                     height="294"
                   />
-                  <p class="works-descr">
+                  <p class="works__descr">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
                     о компании или частном лице.
                   </p>
                 </div>
 
-                <h2 class="works-title">Издание Limited Edition</h2>
-                <p class="works-text">Дизайн</p>
+                <h2 class="works__title">Издание Limited Edition</h2>
+                <p class="works__text">Дизайн</p>
               </a>
             </li>
             <!-- Пример №8 -->
-            <li class="flex-element">
-              <a class="works-link" href="">
-                <div class="works-thumb">
+            <li class="works__element">
+              <a class="works__link" href="">
+                <div class="works__thumb">
                   <img
-                    class="works-img"
+                    class="works__img"
                     src="./images/portfolio/work-8.jpg"
                     alt="Пример работы №8"
                     width="370"
                     height="294"
                   />
-                  <p class="works-descr">
+                  <p class="works__descr">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
                     о компании или частном лице.
                   </p>
                 </div>
 
-                <h2 class="works-title">Проект LAB</h2>
-                <p class="works-text">Маркетинг</p>
+                <h2 class="works__title">Проект LAB</h2>
+                <p class="works__text">Маркетинг</p>
               </a>
             </li>
             <!-- Пример №9 -->
-            <li class="flex-element">
-              <a class="works-link" href="">
-                <div class="works-thumb">
+            <li class="works__element">
+              <a class="works__link" href="">
+                <div class="works__thumb">
                   <img
-                    class="works-img"
+                    class="works__img"
                     src="./images/portfolio/work-9.jpg"
                     alt="Пример работы №9"
                     width="370"
                     height="294"
                   />
-                  <p class="works-descr">
+                  <p class="works__descr">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения <br />
                     о компании или частном лице.
                   </p>
                 </div>
 
-                <h2 class="works-title">Growing Business</h2>
-                <p class="works-text">Приложение</p>
+                <h2 class="works__title">Growing Business</h2>
+                <p class="works__text">Приложение</p>
               </a>
             </li>
           </ul>
@@ -286,74 +293,101 @@
     <!-- Футер -->
     <footer class="footer">
       <div class="container">
-        <div class="contacts-footer">
-          <div class="contacts">
-            <a class="logo footer" href="./index.html"><span>Web</span>Studio</a>
-            <address>
-              <ul class="list">
-                <li class="list-item">
+        <div class="footer__container">
+          <div class="footer__contacts">
+            <a class="logo footer__logo" href="./index.html"
+              ><span class="logo__footer--text">Web</span>Studio</a
+            >
+            <address class="adress">
+              <ul class="footer__list list">
+                <li class="footer__item footer__item--adress">
                   <a
-                    class="link pointer footer-adress"
+                    class="link footer__link"
                     href="https://goo.gl/maps/1aV7GLh5moSTKQaL6"
                     target="_blank"
                     rel="noopener noreferrer"
                     >г. Киев, пр-т Леси Украинки, 26</a
                   >
                 </li>
-                <li class="auth-nav list-item">
-                  <a class="link pointer footer-mail" href="mailto:info@devstudio.com"
+                <li class="footer__item footer__item--mail">
+                  <a class="link footer__link footer__link--mail" href="mailto:info@devstudio.com"
                     >info@devstudio.com</a
                   >
                 </li>
-                <li class="auth-nav list-item">
-                  <a class="link pointer footer-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                <li class="footer__item footer__item--tel">
+                  <a class="link footer__link footer__link--tel" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
                 </li>
               </ul>
             </address>
           </div>
-          <div class="social">
-            <h3 class="footer-title">присоединяйтесь</h3>
-            <ul class="list footer-all-icons">
-              <li class="footer-icon">
-                <div class="footer-block">
-                  <a class="footer-link" aria-label="instagram" href="">
-                    <svg class="icon-footer" width="20" height="20">
+
+          <div class="social-media">
+            <h3 class="social-media__title">присоединяйтесь</h3>
+            <ul class="list social-media__list">
+              <li class="social-media__item">
+                <div class="social-media__block">
+                  <a class="social-media__link" aria-label="instagram" href="">
+                    <svg class="social-media__icon" width="20" height="20">
                       <use href="./images/sprite.svg#icon-instagram2"></use>
                     </svg>
                   </a>
                 </div>
               </li>
 
-              <li class="footer-icon">
-                <div class="footer-block">
-                  <a class="footer-link" aria-label="instagram" href="">
-                    <svg class="icon-footer" width="20" height="20">
+              <li class="social-media__item">
+                <div class="social-media__block">
+                  <a class="social-media__link" aria-label="instagram" href="">
+                    <svg class="social-media__icon" width="20" height="20">
                       <use href="./images/sprite.svg#icon-twitter2"></use>
                     </svg>
                   </a>
                 </div>
               </li>
 
-              <li class="footer-icon">
-                <div class="footer-block">
-                  <a class="footer-link" aria-label="facebook" href="">
-                    <svg class="icon-footer" width="20" height="20">
+              <li class="social-media__item">
+                <div class="social-media__block">
+                  <a class="social-media__link" aria-label="facebook" href="">
+                    <svg class="social-media__icon" width="20" height="20">
                       <use href="./images/sprite.svg#icon-facebook2"></use>
                     </svg>
                   </a>
                 </div>
               </li>
 
-              <li class="footer-icon">
-                <div class="footer-block">
-                  <a class="footer-link" aria-label="linkedin" href="">
-                    <svg class="icon-footer" width="20" height="20">
+              <li class="social-media__item">
+                <div class="social-media__block">
+                  <a class="social-media__link" aria-label="linkedin" href="">
+                    <svg class="social-media__icon" width="20" height="20">
                       <use href="./images/sprite.svg#icon-linkedin2"></use>
                     </svg>
                   </a>
                 </div>
               </li>
             </ul>
+          </div>
+
+          <div class="footer-modal">
+            <form class="footer-modal__form" autocomplete="off">
+              <p class="footer-modal__text">Подпишитесь на рассылку</p>
+              <div class="footer-modal__box">
+                <label class="footer-modal__email" for="email"></label>
+                <input
+                  class="footer-modal__input"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="E-mail"
+                />
+                <button class="button" type="submit">
+                  Подписаться
+                  <svg class="button__icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
